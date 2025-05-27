@@ -44,7 +44,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 header nav {
@@ -68,7 +68,7 @@ header .logo a {
 .logo-img {
     max-height: 160px;
     max-width: 280px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 header ul {
@@ -92,6 +92,26 @@ header a {
 
 header a:hover {
     color: var(--color-secondary); /* Dorado para hover */
+}
+
+/* Header Shrink Styles */
+.header-shrink {
+    padding-top: 10px;
+    min-height: 50px;
+    box-shadow: 0 2px 10px var(--color-shadow);
+}
+
+.header-shrink .logo-img {
+    max-height: 80px;
+    max-width: 200px;
+}
+
+.header-shrink nav {
+    padding: 5px 0;
+}
+
+.header-shrink nav ul li a {
+    font-size: 0.9em;
 }
 
 /* Hero Section */
@@ -148,19 +168,22 @@ header a:hover {
 }
 
 .cta-button {
-    background: var(--color-primary);
+    background: var(--color-secondary);
     color: var(--color-white);
     padding: 15px 30px;
     text-decoration: none;
     font-size: 1.2em;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    animation: pulse 2s infinite ease-in-out 1s;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(208, 172, 49, 0.15);
+    border: none;
 }
 
 .cta-button:hover {
-    background-color: var(--color-secondary);
-    transform: scale(1.05);
+    background-color: #E6D7A7; /* Color dorado más pastel/suave */
+    color: var(--color-primary);
+    box-shadow: 0 2px 10px rgba(208, 172, 49, 0.2);
+    transform: translateY(-2px);
 }
 
 /* Secciones Generales */
