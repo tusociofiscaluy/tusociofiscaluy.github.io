@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            header.style.backgroundColor = '#556B2F'; // Verde oliva más oscuro
+            header.style.backgroundColor = '#0A2540'; // Azul oscuro
         } else {
-            header.style.backgroundColor = '#6B8E23'; // Verde oliva original
+            header.style.backgroundColor = '#8DA07D'; // Verde oliva
         }
     });
 });
