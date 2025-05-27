@@ -5,7 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #FFFFFF; /* Blanco */
-    color: #333;
+    color: #0A2540; /* Azul oscuro */
     line-height: 1.6;
 }
 
@@ -22,11 +22,11 @@ html {
 
 /* Header y Navegación */
 header {
-    background: #6B8E23; /* Verde Oliva */
+    background: #8DA07D; /* Verde Oliva */
     color: #FFFFFF;
     padding-top: 20px;
     min-height: 70px;
-    border-bottom: #556B2F 3px solid; /* Verde Oliva más oscuro */
+    border-bottom: #0A2540 3px solid; /* Azul oscuro */
     position: fixed;
     width: 100%;
     top: 0;
@@ -74,7 +74,7 @@ header a {
 }
 
 header a:hover {
-    color: #E6E6FA; /* Lavanda claro para hover */
+    color: #f0f0f0; /* Blanco ligeramente atenuado para hover */
 }
 
 /* Hero Section */
@@ -132,7 +132,7 @@ header a:hover {
 }
 
 .cta-button {
-    background: #6B8E23; /* Verde Oliva */
+    background: #8DA07D; /* Verde Oliva */
     color: #FFFFFF;
     padding: 15px 30px;
     text-decoration: none;
@@ -143,7 +143,7 @@ header a:hover {
 }
 
 .cta-button:hover {
-    background-color: #556B2F; /* Verde Oliva más oscuro */
+    background-color: #0A2540; /* Azul oscuro */
     transform: scale(1.05);
 }
 
@@ -161,7 +161,7 @@ section:last-of-type {
 section h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #6B8E23; /* Verde Oliva */
+    color: #8DA07D; /* Verde Oliva */
     position: relative;
     display: inline-block;
 }
@@ -171,7 +171,7 @@ section h2::after {
     display: block;
     width: 60px;
     height: 3px;
-    background: #556B2F; /* Verde Oliva más oscuro */
+    background: #0A2540; /* Azul oscuro */
     margin: 10px auto 0;
 }
 
@@ -212,7 +212,7 @@ section h2::after {
 
 .servicio-item h3 {
     font-size: 1.3em;
-    color: #6B8E23; /* Verde Oliva */
+    color: #8DA07D; /* Verde Oliva */
     margin-bottom: 10px;
 }
 
@@ -228,7 +228,7 @@ section h2::after {
 }
 
 #contacto a {
-    color: #6B8E23; /* Verde Oliva */
+    color: #8DA07D; /* Verde Oliva */
     text-decoration: none;
     font-weight: bold;
 }
@@ -239,7 +239,7 @@ section h2::after {
 
 /* Footer */
 footer {
-    background: #333;
+    background: #0A2540; /* Azul oscuro */
     color: #FFFFFF;
     text-align: center;
     padding: 20px 0;
@@ -251,7 +251,7 @@ footer p {
 
 /* Iconos de Servicios */
 .servicio-icon {
-    background-color: #6B8E23;
+    background-color: #8DA07D;
     color: white;
     width: 50px;
     height: 50px;
@@ -274,7 +274,7 @@ footer p {
 
 .servicio-item:hover .servicio-icon {
     transform: scale(1.1);
-    background-color: #556B2F;
+    background-color: #0A2540;
 }
 
 /* Animaciones */
