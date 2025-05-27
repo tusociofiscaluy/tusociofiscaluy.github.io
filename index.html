@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu Socio Fiscal</title>
-  <style>
-    body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; margin: 0; }
-    header { background-color: #114B5F; color: white; padding: 20px; text-align: center; }
-    nav { background-color: #028090; display: flex; justify-content: center; gap: 20px; padding: 10px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    section { padding: 40px 20px; max-width: 800px; margin: auto; background-color: white; margin-top: 20px; }
-    footer { background-color: #114B5F; color: white; text-align: center; padding: 15px; margin-top: 20px; }
-    .btn { background-color: #02C39A; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; }
-    .btn:hover { background-color: #028090; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contadora Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Tu Socio Fiscal</h1>
-    <p>Asesoría contable y fiscal personalizada</p>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home">Logo Contadora</a> 
+            </div>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="#servicios">Servicios</a>
-    <a href="#sobre">Sobre Nosotros</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Asesoría Contable Profesional</h1>
+                <p>Soluciones financieras y fiscales a tu medida.</p>
+                <p class="hero-tagline">Experiencia, confianza y resultados</p>
+                <a href="#servicios" class="cta-button">Ver Servicios</a>
+            </div>
+        </section>
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Declaraciones de IRPF para servicios personales</li>
-      <li>Liquidación mensual de IVA</li>
-      <li>Asesoramiento en IRAE y régimen fiscal</li>
-      <li>Consultoría contable para profesionales</li>
-      <li>Optimización de beneficios fiscales</li>
-    </ul>
-  </section>
+        <section id="quienes-somos">
+            <h2>Quiénes Somos</h2>
+            <p>Somos un equipo de contadores dedicados a ofrecer servicios de alta calidad, con un enfoque personalizado para cada cliente. Nuestra misión es ayudarte a alcanzar tus objetivos financieros con transparencia y eficiencia.</p>
+        </section>
 
-  <section id="sobre">
-    <h2>Sobre Nosotros</h2>
-    <p>En Tu Socio Fiscal creemos en una contabilidad cercana, clara y adaptada a las necesidades reales de cada profesional independiente. Te acompañamos para que tomes decisiones informadas y estés al día con tus obligaciones.</p>
-  </section>
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-container">
+                <div class="servicio-item">
+                    <div class="servicio-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="servicio-content">
+                        <h3>Contabilidad General</h3>
+                        <p>Llevamos tu contabilidad al día, asegurando el cumplimiento normativo.</p>
+                    </div>
+                </div>
+                <div class="servicio-item">
+                    <div class="servicio-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <div class="servicio-content">
+                        <h3>Declaraciones de Impuestos</h3>
+                        <p>Preparamos y presentamos tus declaraciones fiscales de manera oportuna.</p>
+                    </div>
+                </div>
+                <div class="servicio-item">
+                    <div class="servicio-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="servicio-content">
+                        <h3>Asesoría Financiera</h3>
+                        <p>Te ofrecemos estrategias para optimizar tus finanzas y tomar decisiones informadas.</p>
+                    </div>
+                </div>
+                <div class="servicio-item">
+                    <div class="servicio-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="servicio-content">
+                        <h3>Consultoría Fiscal</h3>
+                        <p>Resolvemos tus dudas y te ayudamos a planificar tu carga tributaria.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Tenés dudas o querés saber si tenés que declarar IRPF?</p>
-    <a class="btn" href="https://wa.me/598XXXXXXXX" target="_blank">Escribinos por WhatsApp</a>
-  </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o deseas contratar nuestros servicios, no dudes en contactarnos:</p>
+            <p><strong>Email:</strong> <a href="mailto:contacto@contadoraejemplo.com">contacto@contadoraejemplo.com</a></p>
+            <p><strong>Teléfono:</strong> <a href="tel:+1234567890">+123 456 7890</a></p>
+        </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Tu Socio Fiscal - Todos los derechos reservados</p>
-  </footer>
+    <footer>
+        <p>&copy; 2024 Contadora Profesional. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
