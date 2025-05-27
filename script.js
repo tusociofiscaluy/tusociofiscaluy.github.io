@@ -22,32 +22,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animación sutil en los items de servicio al hacer scroll
-    const servicioItems = document.querySelectorAll('.servicio-item');
-    const animateOnScroll = () => {
-        servicioItems.forEach(item => {
-            const itemTop = item.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            // Animar cuando el item está a un 80% de la altura de la ventana
-            if (itemTop < windowHeight * 0.8) {
-                item.style.animation = 'fadeInUp 0.8s ease-out forwards';
-            }
-        });
-    };
+    // Se ha eliminado la animación de los items de servicio durante el scroll
 
-    window.addEventListener('scroll', animateOnScroll);
-    // Ejecutar una vez al cargar por si algunos elementos ya son visibles
-    animateOnScroll();
-
-    // Cambiar el fondo del header al hacer scroll
+    // Cambiar el fondo y tamaño del header al hacer scroll
     const header = document.querySelector('header');
+    const logo = document.querySelector('.logo-img');
+    
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            header.style.backgroundColor = '#0A2540'; // Azul oscuro
-            header.style.borderBottom = '3px solid #E6B980'; // Borde dorado
+            header.classList.add('header-shrink');
         } else {
-            header.style.backgroundColor = '#0A2540'; // Azul oscuro
-            header.style.borderBottom = '3px solid #E6B980'; // Borde dorado
+            header.classList.remove('header-shrink');
         }
     });
 });
