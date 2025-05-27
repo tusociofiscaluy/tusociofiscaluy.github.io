@@ -44,8 +44,10 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.style.backgroundColor = '#0A2540'; // Azul oscuro
+            header.style.borderBottom = '3px solid #E6B980'; // Borde dorado
         } else {
-            header.style.backgroundColor = '#8DA07D'; // Verde oliva
+            header.style.backgroundColor = '#0A2540'; // Azul oscuro
+            header.style.borderBottom = '3px solid #E6B980'; // Borde dorado
         }
     });
 });
